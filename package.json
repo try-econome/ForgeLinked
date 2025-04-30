@@ -1,6 +1,6 @@
 {
   "name": "@tryforge/forge.linked",
-  "version": "1.1.0-dev",
+  "version": "1.1.0",
   "description": "A Lavalink implementation made for ForgeScript.",
   "main": "dist/index.js",
   "scripts": {
@@ -9,9 +9,8 @@
     "test": "node __test__/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "projectconome",
   "license": "Apache-2.0",
-  "packageManager": "pnpm@9.15.4",
   "devDependencies": {
     "@tryforge/forgescript": "^2.2.0",
     "@types/node": "^22.13.5",
