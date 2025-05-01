@@ -1,9 +1,9 @@
 ---
 
-# ForgeLink  
+# ForgeLinked  
 Music made stronger with Lavalink for [ForgeScript](https://npmjs.com/package/@tryforge/forgescript).  
 
-<a href="https://github.com/tryforge/ForgeLink/"><img src="https://img.shields.io/github/package-json/v/tryforge/ForgeLink/main?label=@tryforge/forge.link&color=5c16d4" alt="@tryforge/forge.link"></a>
+<a href="https://github.com/tryforge/ForgeLinked/"><img src="https://img.shields.io/github/package-json/v/tryforge/ForgeLinked/main?label=@tryforge/forge.linked&color=5c16d4" alt="@tryforge/forge.linked"></a>
  <a href="https://github.com/tryforge/ForgeScript/"><img src="https://img.shields.io/github/package-json/v/tryforge/ForgeScript/main?label=@tryforge/forgescript&color=5c16d4" alt="@tryforge/forgescript"></a>
  <a href="https://discord.gg/hcJgjzPvqb"><img src="https://img.shields.io/discord/739934735387721768?logo=discord" alt="Discord"></a>
 
@@ -33,12 +33,12 @@ Music made stronger with Lavalink for [ForgeScript](https://npmjs.com/package/@t
 
 > [!CAUTION]
 > ⚠️ **Warning**  
-> ForgeLink is not compatible with ForgeMusic at the moment. Use it only if you understand Lavalink and its setup.  
+> ForgeLinked is not compatible with ForgeMusic at the moment. Use it only if you understand Lavalink and its setup.  
 
-To install ForgeLink in your project, use:  
+To install ForgeLinked in your project, use:  
 
 ```bash
-npm install @tryforge/forge.link
+npm install @tryforge/forge.linked
 ```  
 
 If you're using a different package manager, look up how to install Node.js dependencies accordingly.  
@@ -102,7 +102,7 @@ const client = new ForgeClient({
 
 ## Listening Events  
 
-ForgeLink allows you to listen to specific Lavalink events. To do this, define them inside the `events` object:  
+ForgeLinked allows you to listen to specific Lavalink events. To do this, define them inside the `events` object:  
 
 ```js
 const lavalink = new ForgeLink({
@@ -137,7 +137,7 @@ lavalink.commands.shoukaku.add(
 
 ## Lavalink Configuration  
 
-To connect ForgeLink to a Lavalink server, provide the `nodes` parameter in the setup:  
+To connect ForgeLinked to a Lavalink server, provide the `nodes` parameter in the setup:  
 
 ```js
 const lavalink = new ForgeLink({
@@ -186,7 +186,7 @@ This package was developed with ♥️ by [Econome](https://discord.com/users/83
 
 We hope you enjoy using ForgeLink!  
 
-[![Contributors](https://contrib.rocks/image?repo=tryforge/ForgeLink)](https://github.com/tryforge/ForgeLink)  
+[![Contributors](https://contrib.rocks/image?repo=tryforge/ForgeLinked)](https://github.com/tryforge/ForgeLinked)  
 
 ---
 
