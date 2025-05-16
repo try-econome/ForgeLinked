@@ -18,7 +18,7 @@ export class NodeEventHandler<T extends NodeEventNames = NodeEventNames> extends
             forgeLink.lavalink.nodeManager.on(this.name as any, (...args: any[]) => {
                 this.listener.apply(client, args);
             });
-        } else {
+        } else { 
             console.warn(`[ForgeLink] Attempted to register event "${this.name}" but lavalink manager is not initialized.`);
         }
     }

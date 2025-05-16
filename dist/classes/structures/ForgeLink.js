@@ -157,8 +157,9 @@ class ForgeLink extends forgescript_1.ForgeExtension {
                 }
             }
         });
-        forgescript_1.FunctionManager.load('ForgeLink', (0, path_1.join)(__dirname, '../../natives'));
-        forgescript_1.EventManager.load('lavalinkEvents', (0, path_1.join)(__dirname, '../../events'));
+        forgescript_1.EventManager.load('lavalinkEvents', (0, path_1.join)(__dirname, '../../events/player'));
+        forgescript_1.EventManager.load('lavalinkNodeEvents', (0, path_1.join)(__dirname, '../../events/node'));
+        this.load((0, path_1.join)(__dirname, '../../natives'));
         if (this.options.events?.player?.length) {
             for (const event of this.options.events.player) {
                 this.#e.on(event, (...args) => {
@@ -167,6 +168,7 @@ class ForgeLink extends forgescript_1.ForgeExtension {
             }
         }
         client.events.load('lavalinkEvents', this.options.events?.player ?? []);
+        client.events.load('lavalinkNodeEvents', this.options.events?.player ?? []);
     }
     get lavalink() {
         return this.#e;

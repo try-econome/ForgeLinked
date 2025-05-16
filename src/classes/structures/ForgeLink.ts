@@ -291,9 +291,10 @@ export class ForgeLink extends ForgeExtension {
             }
         });
         
-        FunctionManager.load('ForgeLink', join(__dirname, '../../natives'));
+        
         EventManager.load('lavalinkEvents', join(__dirname, '../../events/player'));
         EventManager.load('lavalinkNodeEvents', join(__dirname, '../../events/node'));
+        this.load(join(__dirname, '../../natives'));
         
         if (this.options.events?.player?.length) {
             for (const event of this.options.events.player) {

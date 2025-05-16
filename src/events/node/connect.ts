@@ -6,6 +6,7 @@ export default new NodeEventHandler({
     name: 'connect',
     description: '...',
     async listener(node) {
+        // @ts-ignore
         const commands = this.getExtension(ForgeLink, true).commands.player.get("connect")
         if (!commands) return;
 
