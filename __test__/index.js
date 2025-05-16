@@ -35,6 +35,12 @@ client.commands.add({
     name: 'plai',
     type: 'messageCreate',
     code: '$if[$hasPlayer[$guildID]==false;$createPlayer[$guildID;$voiceID[$guildID;$authorID];$channelID]]\n$addTrack[$guildID;$message]'
+}),
+
+client.commands.add({
+    name: 'e',
+    type: 'messageCreate',
+    code: '$onlyForUsers[Not for you!;$botOwnerID] $eval[$message]'
 })
 
 
