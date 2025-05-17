@@ -15,13 +15,13 @@ type LavalinkEventNames =
   | 'playerVoiceJoin'
   | 'playerVoiceLeave'
   | 'debug'
-  | 'connect'
-  | 'disconnect'
-  | 'reconnecting'
-  | 'create'
-  | 'destroy'
-  | 'error'
-  | 'resumed'
+  | 'LyricsLine'
+  | 'LyricsFound'
+  | 'LyricsNotFound'
+  | 'SegmentsLoaded'
+  | 'SegmentSkipped'
+  | 'ChapterStarted'
+  | 'ChaptersLoaded'
   ;
 
 export class LavalinkEventHandler<T extends LavalinkEventNames = LavalinkEventNames> extends BaseEventHandler<any, T> {
