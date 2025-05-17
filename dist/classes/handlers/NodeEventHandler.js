@@ -6,13 +6,13 @@ const ForgeLink_1 = require("../structures/ForgeLink");
 class NodeEventHandler extends forgescript_1.BaseEventHandler {
     register(client) {
         const forgeLink = client.getExtension(ForgeLink_1.ForgeLink, true);
-        if (forgeLink.lavalink) {
+        if (forgeLink.lavalink.nodeManager) {
             forgeLink.lavalink.nodeManager.on(this.name, (...args) => {
                 this.listener.apply(client, args);
             });
         }
         else {
-            console.warn(`[ForgeLink] Attempted to register event "${this.name}" but lavalink manager is not initialized.`);
+            console.warn(`[ForgeLink] Attempted to register event "${this.name}" but Node manager is not initialized.`);
         }
     }
 }
